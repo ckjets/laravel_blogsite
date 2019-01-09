@@ -1,0 +1,13 @@
+#navbar li {
+    margin-right:10px;
+}
+
+#navbar li a {
+    color: #fff;
+    /*delete underline*/
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: #cdd8d7;
+}
