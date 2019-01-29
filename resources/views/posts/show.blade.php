@@ -17,6 +17,7 @@
 {{-- ログインしないとEditおよびDeleteボタンが表示されない --}}
 @if(!Auth::guest())
 {{-- user() = table --}}
+
 {{-- 投稿者しかeditとdeleteできないしくみ --}}
 @if(Auth::user()->id == $post->user_id)
 <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>

@@ -14,7 +14,7 @@
           {{-- !! = HTMLから変換される (太字などそのまま反映される) --}}
           <p>{!!$post->body!!}</p>
           <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
-          
+
         </div>
     </div>
     <hr>
