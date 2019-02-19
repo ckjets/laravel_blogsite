@@ -32,6 +32,9 @@ Route::get('/create','PostsController@create');
 Auth::routes();
 Route::get('/dashboard','DashboardController@index');
 
+//add search
+Route::get('/search','PostsController@search');
+
 
 
 //dynamic(value hange) route

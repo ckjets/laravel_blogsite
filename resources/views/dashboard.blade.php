@@ -2,6 +2,21 @@
 
 @section('content')
 <div class="container">
+    {{-- search function --}}
+    <div class="row justify-content-center mb-3">
+            <div class="col-md-8">
+                <form action="/search" method="GET">
+                    <div class="input-group">
+                        <input type="search" name="search" class="form-control">
+                        <span class="input-group-prepend">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

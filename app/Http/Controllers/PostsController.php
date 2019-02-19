@@ -164,4 +164,13 @@ class PostsController extends Controller
         return redirect('/posts')->with('success','Post Deleted');
 
     }
+
+    public function search(Request $request)
+    {
+        // タイトルに基づいて検索する
+        //get('search') ←input name
+        $search = $request->get('search');
+        $posts = DB::table('posts')->where('title','like','%'.$search.'%')->paginate(5);
+        return view('dashboard',['posts' => $posts]);
+    }
 }
